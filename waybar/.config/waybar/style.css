@@ -1,0 +1,186 @@
+@import "../omarchy/current/theme/waybar.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: 'JetBrainsMono Nerd Font';
+    font-size: 24px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background: rgba(30, 30, 46, 0.0); /* Прозрачный фон */
+    color: @foreground;
+    border-radius: 16px; /* Закругленные углы */
+    margin: 8px 8px 0 8px; /* Отступы для эффекта плавающего бара */
+    padding: 0;
+}
+
+/* Стили для модулей */
+.modules-left,
+.modules-center,
+.modules-right {
+    background: rgba(49, 50, 68, 0.8); /* Полупрозрачный фон блоков */
+    border-radius: 12px;
+    padding: 0 12px;
+    margin: 4px 4px;
+}
+
+/* Стили для групп модулей */
+.module-group {
+    background: rgba(91, 94, 108, 0.6);
+    border-radius: 10px;
+    padding: 0 8px;
+    margin: 2px 4px;
+}
+
+/* Рабочие пространства */
+#workspaces {
+    background: transparent;
+    padding: 0;
+}
+
+#workspaces button {
+    all: initial;
+    padding: 0 10px;
+    margin: 0 2px;
+    min-width: 20px;
+    background: rgba(88, 91, 112, 0.5);
+    border-radius: 8px;
+    color: @foreground;
+    transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+    background: rgba(137, 180, 250, 0.3);
+}
+
+#workspaces button.active {
+    background: rgba(137, 180, 250, 0.6);
+    color: #1e1e2e;
+    box-shadow: 0 0 4px rgba(137, 180, 250, 0.4);
+}
+
+#workspaces button.empty {
+    opacity: 0.4;
+}
+
+/* Стили для иконок и кнопок */
+#cpu,
+#battery,
+#pulseaudio,
+#custom-omarchy,
+#custom-layout-coding,
+#custom-screenrecording-indicator,
+#custom-update,
+#custom-vpn,
+#custom-obsidian,
+#custom-firefox,
+#custom-steam {
+    background: rgba(88, 91, 112, 0.4);
+    border-radius: 8px;
+    padding: 0 10px;
+    margin: 0 4px;
+    min-height: 24px;
+    transition: all 0.3s ease;
+}
+
+/* Ховер эффекты */
+#cpu:hover,
+#battery:hover,
+#pulseaudio:hover,
+#custom-layout-coding:hover,
+#custom-omarchy:hover,
+#custom-firefox:hover,
+#custom-steam:hover {
+    background: rgba(137, 180, 250, 0.3);
+}
+
+/* Особые стили для кнопок */
+#custom-firefox {
+    background: rgba(221, 80, 41, 0.4); /* Firefox оранжевый */
+    color: #ff9566;
+}
+
+#custom-firefox:hover {
+    background: rgba(221, 80, 41, 0.6);
+    box-shadow: 0 0 6px rgba(221, 80, 41, 0.4);
+}
+
+#custom-steam {
+    background: rgba(27, 40, 56, 0.4); /* Steam синий */
+    color: #66c0ff;
+}
+
+#custom-steam:hover {
+    background: rgba(27, 40, 56, 0.6);
+    box-shadow: 0 0 6px rgba(27, 40, 56, 0.4);
+}
+
+/* Стили для остальных модулей */
+#clock {
+    background: rgba(88, 91, 112, 0.4);
+    border-radius: 8px;
+    padding: 0 12px;
+    margin: 0 4px;
+}
+
+#network,
+#bluetooth {
+    background: rgba(88, 91, 112, 0.4);
+    border-radius: 8px;
+    padding: 0 10px;
+    margin: 0 4px;
+}
+
+#tray {
+    background: rgba(88, 91, 112, 0.4);
+    border-radius: 8px;
+    padding: 0 10px;
+    margin: 0 4px;
+}
+
+/* Индикаторы */
+#custom-screenrecording-indicator {
+    font-size: 12px;
+}
+
+#custom-screenrecording-indicator.active {
+    background: rgba(165, 85, 85, 0.4);
+    color: #ff9e9e;
+}
+
+#custom-voxtype.recording {
+    background: rgba(165, 85, 85, 0.4);
+    color: #ff9e9e;
+}
+
+/* Батарея */
+#battery.critical {
+    background: rgba(237, 135, 150, 0.4);
+    color: #f38ba8;
+    animation: pulse 2s infinite;
+}
+
+/*
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+*/
+
+/* Тултипы */
+tooltip {
+    background: rgba(30, 30, 46, 0.95);
+    border: 1px solid rgba(137, 180, 250, 0.3);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+/* Скрытые элементы */
+.hidden {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
