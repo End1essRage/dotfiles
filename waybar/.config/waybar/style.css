@@ -77,7 +77,9 @@ window#waybar {
 #custom-vpn,
 #custom-obsidian,
 #custom-firefox,
-#custom-steam {
+#custom-discord,
+#custom-steam 
+{
     background: rgba(88, 91, 112, 0.4);
     border-radius: 8px;
     padding: 0 10px;
@@ -86,6 +88,8 @@ window#waybar {
     transition: all 0.3s ease;
 }
 
+
+
 /* Ховер эффекты */
 #cpu:hover,
 #battery:hover,
@@ -93,11 +97,22 @@ window#waybar {
 #custom-layout-coding:hover,
 #custom-omarchy:hover,
 #custom-firefox:hover,
+#custom-discord:hover,
 #custom-steam:hover {
     background: rgba(137, 180, 250, 0.3);
 }
 
 /* Особые стили для кнопок */
+#custom-discord {
+    background: rgba(111, 24, 252, 0.55); /* Firefox оранжевый */
+    color: #36017b;
+}
+#custom-discord:hover {
+    background: rgba(54, 1, 123, 0.6);
+    box-shadow: 0 0 6px rgba(65, 7, 172, 0.4);
+    color: #8a72aa;
+}
+
 #custom-firefox {
     background: rgba(221, 80, 41, 0.4); /* Firefox оранжевый */
     color: #ff9566;
