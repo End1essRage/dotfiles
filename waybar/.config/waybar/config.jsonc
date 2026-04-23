@@ -47,7 +47,7 @@
   },
   "custom/discord": {
     "format": "",
-    "on-click": "alacritty --hold -e bash -c \"echo '~/discord_fix/zapret-discord-youtube-linux/main_script.sh' && echo '' && echo 'Нажми Enter чтобы выполнить команду...' && read && sudo ~/discord_fix/zapret-discord-youtube-linux/main_script.sh\"",
+    "on-click": "alacritty --hold -e bash -c \"echo '~/discord_fix/zapret-discord-youtube-linux/service.sh' && echo '' && echo 'Нажми Enter чтобы выполнить команду...' && read && sudo ~/discord_fix/zapret-discord-youtube-linux/service.sh\"",
     "tooltip": "obsidian"
   },
   "custom/omarchy": {
