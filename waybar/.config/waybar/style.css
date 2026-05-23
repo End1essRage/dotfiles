@@ -72,7 +72,7 @@ window#waybar {
 #pulseaudio,
 #custom-omarchy,
 #custom-layout-coding,
-#custom-screenrecording-indicator,
+
 #custom-update,
 #custom-vpn,
 #custom-obsidian,
@@ -157,8 +157,15 @@ window#waybar {
 }
 
 /* Индикаторы */
-#custom-screenrecording-indicator {
-    font-size: 12px;
+
+#custom-screenrecording-indicator,
+#custom-idle-indicator,
+#custom-notification-silencing-indicator {
+  min-width: 12px;
+  margin-left: 5px;
+  margin-right: 0;
+  font-size: 10px;
+  padding-bottom: 1px;
 }
 
 #custom-screenrecording-indicator.active {
@@ -198,4 +205,8 @@ tooltip {
     opacity: 0;
     margin: 0;
     padding: 0;
+}
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active {
+  color: #a55555;
 }
