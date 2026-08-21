@@ -78,7 +78,8 @@ window#waybar {
 #custom-obsidian,
 #custom-firefox,
 #custom-discord,
-#custom-steam 
+#custom-steam,
+#custom-screen-rec
 {
     background: rgba(88, 91, 112, 0.4);
     border-radius: 8px;
@@ -121,6 +122,11 @@ window#waybar {
 #custom-firefox:hover {
     background: rgba(221, 80, 41, 0.6);
     box-shadow: 0 0 6px rgba(221, 80, 41, 0.4);
+}
+
+#custom-screen-rec {
+    background: rgba(27, 40, 56, 0.4); /* Steam синий */
+    color: #66c0ff;
 }
 
 #custom-steam {
@@ -209,4 +215,16 @@ tooltip {
 #custom-idle-indicator.active,
 #custom-notification-silencing-indicator.active {
   color: #a55555;
+}
+
+
+#custom-weather {
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+#custom-weather.unavailable {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
 }

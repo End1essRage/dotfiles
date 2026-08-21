@@ -1,0 +1,104 @@
+{
+  "bar": {
+    "centerAnchor": "omarchy.clock",
+    "layout": {
+      "center": [
+        {
+          "id": "omarchy.indicators"
+        },
+        {
+          "format": "dddd HH:mm",
+          "formatAlt": "d MMMM 'W'ww yyyy",
+          "id": "omarchy.clock",
+          "verticalFormat": "HH\n—\nmm"
+        },
+        {
+          "id": "omarchy.keyboard-layout"
+        },
+        {
+          "id": "omarchy.weather"
+        },
+        {
+          "id": "omarchy.system-update"
+        }
+      ],
+      "left": [
+        {
+          "id": "omarchy.menu"
+        },
+        {
+          "id": "omarchy.workspaces"
+        }
+      ],
+      "right": [
+        {
+          "id": "omarchy.tray"
+        },
+        {
+          "id": "omarchy.tailscale"
+        },
+        {
+          "id": "steam",
+          "type": "command",
+          "exec": "echo '󰓓'",
+          "tooltip": "steam",
+          "onClick": "steam"
+        },
+        {
+          "id": "discord",
+          "type": "command",
+          "exec": "echo ''",
+          "tooltip": "discord-fix",
+          "onClick": "alacritty --hold -e bash -c \"echo '~/discord_fix/zapret-discord-youtube-linux/service.sh' && echo '' && echo 'Нажми Enter чтобы выполнить команду...' && read && sudo ~/discord_fix/zapret-discord-youtube-linux/service.sh\""
+        },
+        {
+          "id": "obsidian",
+          "type": "command",
+          "exec": "echo ''",
+          "tooltip": "Obsidian",
+          "onClick": "obsidian"
+        },
+        {
+          "id": "vpn",
+          "type": "command",
+          "exec": "echo ''",
+          "tooltip": "VPN",
+          "onClick": "alacritty --hold -e bash -c \"sudo V2RAY_BIN=/usr/local/bin/xray v2raya\""
+        },
+        {
+          "id": "firefox",
+          "type": "command",
+          "exec": "echo '󰈹'",
+          "tooltip": "Firefox\nЛКМ: Открыть Firefox",
+          "onClick": "firefox"
+        },
+        {
+          "id": "omarchy.agents"
+        },
+        {
+          "id": "omarchy.bluetooth"
+        },
+        {
+          "id": "omarchy.network"
+        },
+        {
+          "id": "omarchy.audio"
+        },
+        {
+          "id": "omarchy.monitor"
+        },
+        {
+          "id": "omarchy.power"
+        }
+      ]
+    },
+    "position": "top",
+    "transparent": false
+  },
+  "idle": {
+    "lock": 300,
+    "screensaver": 150
+  },
+  "plugins": [],
+  "version": 1
+}
